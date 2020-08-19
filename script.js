@@ -1,6 +1,14 @@
-let birthYear=10104;
-if(birthYear%400===0||birthYear%100!==0&&birthYear%4===0){
-  document.write("閏年です");
-}else{
-  document.write("閏年ではありません");
-} 
+let string;
+for(let i=1;i<=100;i++){
+    if(i%3===0){
+        string+='Fizz';
+    }
+    if(i%5===0){
+        string+='Buzz';
+    }
+    if(string===''){
+        string=i;
+    }
+    string+=' ';
+    document.write(string);
+}
